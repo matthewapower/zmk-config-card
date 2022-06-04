@@ -118,9 +118,9 @@
                 
        		alpha1 {
 		bindings = <
-		&trans 		&hm LCTL L 	&hm LALT G 	&hm LGUI D		&hm RGUI H 	&hm RALT U    		&hm RCTL O	&trans  
-		&hl NM1 I	&hl SM2 S	&hl SM1 R	&hl SYS T 	 	&hl SYS N    	&hl SM1 E   		&hl SM2 A 	&hl NM1 C
-		&trans	 	&trans 		&trans 		&mt LC(LS(LALT)) SPC 	&to AL2	&trans 			&trans		&trans
+		Q					W 				E	 				R							U 						I    						O						P  
+		A					S	 				D					F 	 					J    					k   						L 					;
+		Z	 				X 				C 				v 						M 						,								.
 								&trans	 		&trans
 		>;
 		};
