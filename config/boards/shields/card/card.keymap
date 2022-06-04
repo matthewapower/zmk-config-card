@@ -131,9 +131,9 @@
                 
        		alpha1 {
 		bindings = <
-		&kp Y		&kp L 	   	&kp G 		&kp D			&kp H 		&kp U    		&kp O		&kp W 
-		&kp I 		&hm LCTL S 	&hm LALT R	&hm LGUI T 	 	&hm RGUI N    	&hm RALT E    		&hm RCTL A 	&kp C
-		&trans	 	&trans 		&trans 		&mt LC(LS(LALT)) SPC 	&sl 1		&trans 			&trans		&trans
+		&td Q TAB			&kp W 	   	&kp E 		&td R T			&kp H 		&kp U    		&kp O		&kp W 
+		&td A ESC 		&kp S 			&kp D			&td F G 	 	&hm RGUI N    	&hm RALT E    		&hm RCTL A 	&kp C
+		&mt Z LSHIFT	&trans 		&trans 		&mt LC(LS(LALT)) SPC 	&sl 1		&trans 			&trans		&trans
 								&trans	 		&trans
 		>;
 		};
