@@ -14,183 +14,34 @@
     tapping-term-ms = <201>;
     flavor = "tap-preferred";
  };
+
 &sk {
      release-after-ms = <2000>;
      quick-release;
  };
 
 
-/ { 
-    combos {
-        compatible = "zmk,combos";
-        combo_esc { 
-            timeout-ms = <50>;
-            key-positions = <9 10>;
-            bindings = <&kp ESC>;
-        };
-        combo_4  {
-            timeout-ms = <10>;
-            key-positions = <13 14>;
-            bindings = <&to 4>;
-        };
-        combo_ent {
-            timeout-ms = <20>;
-	    key-positions = <14 15>;
-            bindings = <&kp RET>;
-        };
-        combo_1 {
-            timeout-ms = <50>;
-	    key-positions = <1 2>;
-            bindings = <&to 2>;
-        };
-        combo_bks {
-            timeout-ms = <10>;
-	    key-positions = <5 6>;
-            bindings = <&kp BKSP>;
-        };
-        osl {
-            timeout-ms = <50>;
-	    key-positions = <4 6>;
-            bindings = <&sl 6>;
-        };
-
-        bslh {
-            timeout-ms = <20>;
-	    key-positions = <12 13>;
-            bindings = <&kp BSLH>;
-	    layers = <2>; 
-        };
-        lbkt {
-            timeout-ms = <20>;
-	    key-positions = <20 21>;
-            bindings = <&kp LBKT>;
-	    layers = <2>; 
-        };
-        
-        lalt {
-            timeout-ms = <20>;
-	    key-positions = <10 11>;
-            bindings = <&kp LALT>; 
-	    layers = <4>; 
-        };
-	del {
-            timeout-ms = <20>;
-	    key-positions = <18 19>;
-            bindings = <&kp DEL>;
-	    layers = <4>; 
-        };
-        left {
-            timeout-ms = <20>;
-	    key-positions = <12	13>;
-            bindings = <&kp LEFT>;
-	    layers = <4>;
-        };
-        lclk {
-            timeout-ms = <20>;
-	    key-positions = <20	21>;
-            bindings = <&mkp LCLK>;
-	    layers = <4>;
-        };
-
-
-    };
-
-    behaviors {
-        hm: homerow_mods {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS";
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick_tap_ms = <0>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
-        };
-        sr: layer_shifts {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_SHIFTS";
-            #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            quick_tap_ms = <0>;
-	    retro-tap;
-            flavor = "balanced";
-            bindings = <&kp>, <&to>;
-        };
+behaviors {
 	td: tapdance {
-            compatible = "zmk,behavior-hold-tap";
-            label = "TAPDANCE";
-            #binding-cells = <2>;
-            tapping-term-ms = <190>;
-            quick_tap_ms = <0>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
-        };
-    };
+		compatible = "zmk,behavior-hold-tap";
+		label = "TAPDANCE";
+		#binding-cells = <2>;
+		tapping-term-ms = <190>;
+		quick_tap_ms = <0>;
+		flavor = "tap-preferred";
+		bindings = <&kp>, <&kp>;
+	};
+};
 
-        keymap {
-                compatible = "zmk,keymap";
-                
-       		alpha1 {
+keymap {
+	compatible = "zmk,keymap";
+				
+	alpha1 {
 		bindings = <
-		&td TAB Q			&kp W 	   	&kp E 		&td T R			&td Y U 				&kp I    		&kp O				&kp P
-		&td ESC A 		&kp S 			&kp D			&td G F  	 	&td H J    			&kp K    		&kp L 			&kp SEMI
-		&mt Z LSHIFT	&kp X 			&kp C 		&td B V  		&td N M					&kp COMMA 	&kp DOT			&kp SLASH
-																				&kp SYS	 		&kp SPC
+			&td TAB Q			&kp W 	   	&kp E 		&td T R			&td Y U 				&kp I    		&kp O				&kp P
+			&td ESC A 		&kp S 			&kp D			&td G F  	 	&td H J    			&kp K    		&kp L 			&kp SEMI
+			&mt Z LSHIFT	&kp X 			&kp C 		&td B V  		&td N M					&kp COMMA 	&kp DOT			&kp SLASH
+																					&kp SYS	 		&kp SPC
 		>;
-		};
-       		alpha2 {
-		bindings = <
-		&kp SLASH 	&kp V 		&kp EXCL	&kp M	 	 	&kp F    	&kp COLON    	&kp Z	  	&kp SQT 
-		&kp Q	 	&kp J 		&kp P		&kp K 			&kp B 		&kp COMMA	&kp X		&kp DQT
-		&trans	 	&trans 		&trans 		&sk LSHIFT 		&kp DOT		&trans		&trans		&trans
-								&trans	 		&trans
-		>;
-		};
-		
-       		sym {
-		bindings = <
-		&kp TAB 		&kp LA(N3)   	&kp LS(N3) 			&kp DLLR    			&kp LS(COMMA) 	&kp LS(DOT) 	&kp CARET 	&kp PRCNT 
-		&td LG(GRAVE) GRAVE 	&hm LCTL TILDE  &hm LALT LA(RBKT)      		&hm LGUI LA(LS(RBKT)) 	 	&hm RGUI LBRC  	&hm RALT RBRC 	&hm RSHIFT PIPE &trans
-		&trans			&trans  	&trans				&sr LSHIFT 0 			&to 3		&trans 		&trans  	&trans
-								 			&trans		 		&trans
-		>;
-		};
-
-		num {
-		bindings = <
-		&kp SLASH	&kp STAR 	&kp DOT  	&kp N0 				&kp N1 		&kp N2 	&kp N3 		&kp N4 
-		&kp MINUS	&kp PLUS   	&kp EQUAL	&hm LGUI N5			&hm RGUI N6	&kp N7 	&kp N8   	&kp N9
-		&trans  	&trans 		&trans		&sr LSHIFT 0 			&kp RGUI	&trans 	&trans  	&trans 
-								&trans	 		 	&trans
-		>;
-		};
-
-		sys {
-		bindings = <
-		&kp PG_DN		&mwh SCROLL_LEFT	&mmv MOVE_UP    &mwh SCROLL_RIGHT    					&kp LC(LS(TAB))   	&kp UP		&kp RC(TAB)		&kp LG(LBKT)  		
-		&kp PG_UP		&mmv MOVE_LEFT 		&mmv MOVE_DOWN	&mmv MOVE_RIGHT 					&hm RGUI UP  		&hm RALT DOWN 	&kp RIGHT 		&kp LG(RBKT)
-		&trans 			&trans  		&trans		&sr LSHIFT 0 						&kp RGUI		&trans 		&trans			&trans 	   
-								 		&trans	 						&trans
-		>;
-		};
-
-		bt {
-		bindings = <
-		&trans		&trans 		&trans 		&trans 			&trans 	&trans	&trans	&trans 
-		&bootloader  	&trans 		&trans 		&trans 			&trans 	&trans 	&trans	&trans 
-		&bt BT_PRV	&bt BT_NXT 	&bt BT_CLR 	&trans 			&trans  &trans  &trans 	&trans   
-				 					&to 0 	&to 2 
-		>;
-		};
-
-		os {
-		bindings = <
-		&kp STAR	&kp ATSN	&kp LA(LBKT)			&kp LA(LS(LBKT))				&kp SEMI	&kp LPRN	&kp RPRN 	&kp LS(MINUS)
-		&kp TAB  	&kp QMARK 	&kp LA(RBKT)      		&kp LA(LS(RBKT))  				&kp AMPS	&kp LBKT	&kp RBKT	&kp MINUS 
-		&trans 		&trans 		&trans  			&trans 						&trans 		&trans 		&trans 		&trans   
-				 									&to 0 		&to 2 
-
-		>;
-		};
-        
 	};
 };
