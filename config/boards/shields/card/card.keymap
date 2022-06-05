@@ -11,11 +11,20 @@
 
 / {
 	behaviors {
+		// td: tapdance {
+		// 	compatible = "zmk,behavior-tap-dance";
+		// 	label = "TAPDANCE";
+		// 	#binding-cells = <0>;
+		// 	tapping-term-ms = <200>;
+		// 	bindings = <&kp>, <&kp>;
+		// };
 		td: tapdance {
-			compatible = "zmk,behavior-tap-dance";
+			compatible = "zmk,behavior-hold-tap";
 			label = "TAPDANCE";
-			#binding-cells = <0>;
-			tapping-term-ms = <200>;
+			#binding-cells = <2>;
+			tapping-term-ms = <190>;
+			quick_tap_ms = <0>;
+			flavor = "tap-preferred";
 			bindings = <&kp>, <&kp>;
 		};
 	};
