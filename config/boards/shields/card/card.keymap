@@ -11,61 +11,61 @@
 
 / {
 	behaviors {
-		tdQ: tapdance_Q {
+		tdq: tapdance_Q {
 			compatible = "zmk,behavior-tap-dance";
 			label = "TAPDANCE_Q";
 			tapping-term-ms = <200>;
 			bindings = <&kp Q>, <&kp TAB>;
 		};
-		tdA: tapdance_A {
+		tda: tapdance_A {
 			compatible = "zmk,behavior-tap-dance";
 			label = "TAPDANCE_A";
 			tapping-term-ms = <200>;
 			bindings = <&kp A>, <&kp ESC>;
 		};
-		tdR: tapdance_R {
+		tdr: tapdance_R {
 			compatible = "zmk,behavior-tap-dance";
 			label = "TAPDANCE_R";
 			tapping-term-ms = <200>;
 			bindings = <&kp R>, <&kp T>;
 		};
-		tdF: tapdance_F {
+		tdf: tapdance_F {
 			compatible = "zmk,behavior-tap-dance";
 			label = "TAPDANCE_F";
 			tapping-term-ms = <200>;
 			bindings = <&kp F>, <&kp G>;
 		};
-		tdV: tapdance_V {
+		tdv: tapdance_V {
 			compatible = "zmk,behavior-tap-dance";
 			label = "TAPDANCE_V";
 			tapping-term-ms = <200>;
 			bindings = <&kp V>, <&kp B>;
 		};
-		tdU: tapdance_U {
+		tdu: tapdance_U {
 			compatible = "zmk,behavior-tap-dance";
 			label = "TAPDANCE_U";
 			tapping-term-ms = <200>;
 			bindings = <&kp U>, <&kp Y>;
 		};
-		tdJ: tapdance_J {
+		tdj: tapdance_J {
 			compatible = "zmk,behavior-tap-dance";
 			label = "TAPDANCE_J";
 			tapping-term-ms = <200>;
 			bindings = <&kp J>, <&kp H>;
 		};
-		tdM: tapdance_M {
+		tdm: tapdance_M {
 			compatible = "zmk,behavior-tap-dance";
 			label = "TAPDANCE_M";
 			tapping-term-ms = <200>;
 			bindings = <&kp M>, <&kp N>;
 		};
-		tdP: tapdance_P {
+		tdp: tapdance_P {
 			compatible = "zmk,behavior-tap-dance";
 			label = "TAPDANCE_P";
 			tapping-term-ms = <200>;
 			bindings = <&kp P>, <&kp BACKSPACE>;
 		};
-		tdSEM: tapdance_SEM {
+		tdsem: tapdance_SEM {
 			compatible = "zmk,behavior-tap-dance";
 			label = "TAPDANCE_SEM";
 			tapping-term-ms = <200>;
@@ -78,9 +78,9 @@
 					
 		alpha1 {
 			bindings = <
-				&tdQ 					&kp W 	   	&kp E 		&tdR			&tdU		&kp I    		&kp O				&tdP
-				&mt LSHIFT Z 	&kp S 			&kp D			&tdF  	 	&tdJ		&kp K    		&kp L 			&mt LSHIFT SLASH
-				&tdA 					&kp X 			&kp C 		&tdV  		&tdM		&kp COMMA 	&kp DOT			&tdSEM
+				&tdq 					&kp W 	   	&kp E 		&tdr			&tdu		&kp I    		&kp O				&tdp
+				&mt LSHIFT Z 	&kp S 			&kp D			&tdf  	 	&tdj		&kp K    		&kp L 			&mt LSHIFT SLASH
+				&tda 					&kp X 			&kp C 		&tdv  		&tdm		&kp COMMA 	&kp DOT			&tdsem
 																						&kp SPC	 	&kp SPC
 			>;
 		};
