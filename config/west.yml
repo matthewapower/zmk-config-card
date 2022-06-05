@@ -5,7 +5,7 @@ manifest:
   projects:
     - name: zmk
       remote: benvallack
-      revision: mouse-pr
+      revision: with-tap-dance
       import: app/west.yml
   self:
     path: config
