@@ -26,7 +26,7 @@
 		alpha1 {
 			bindings = <
 				&td TAB Q			&kp W 	   	&kp E 		&td T R			&td Y U		&kp I    		&kp O				&td BKSP P
-				&mt Z LSHIFT 	&kp S 			&kp D			&td G F  	 	&td H J		&kp K    		&kp L 			&mt SLASH LSHIFT
+				&td Z LSHIFT 	&kp S 			&kp D			&td G F  	 	&td H J		&kp K    		&kp L 			&td SLASH LSHIFT
 				&td ESC A 		&kp X 			&kp C 		&td B V  		&td N M		&kp COMMA 	&kp DOT			&td RET SEMI
 																						&kp SPC	 		&kp SPC
 			>;
