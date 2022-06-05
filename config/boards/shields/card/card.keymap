@@ -11,66 +11,32 @@
 
 / {
 	behaviors {
-		tdQ: tapdance_Q {
-			compatible = "zmk,behavior-tap-dance";
-			label = "TAPDANCE_Q";
+		td: tapdance {
+			compatible = "zmk,behavior-hold-tap";
+			label = "TAPDANCE";
+			#binding-cells = <2>;
 			tapping-term-ms = <200>;
-			bindings = <&kp Q>, <&kp TAB>;
+			quick_tap_ms = <0>;
+			flavor = "tap-preferred";
+			bindings = <&kp>, <&kp>;
 		};
-		tdA: tapdance_A {
+		
+		td0: tap_dance_0 {
 			compatible = "zmk,behavior-tap-dance";
-			label = "TAPDANCE_A";
+			label = "TAP_DANCE_0";
+			#binding-cells = <0>;
 			tapping-term-ms = <200>;
-			bindings = <&kp A>, <&kp ESC>;
+			bindings = <&kp N1>, <&kp N2>, <&kp N3>;
 		};
-		tdR: tapdance_R {
-			compatible = "zmk,behavior-tap-dance";
-			label = "TAPDANCE_R";
-			tapping-term-ms = <200>;
-			bindings = <&kp R>, <&kp T>;
-		};
-		tdF: tapdance_F {
-			compatible = "zmk,behavior-tap-dance";
-			label = "TAPDANCE_F";
-			tapping-term-ms = <200>;
-			bindings = <&kp F>, <&kp G>;
-		};
-		tdV: tapdance_V {
-			compatible = "zmk,behavior-tap-dance";
-			label = "TAPDANCE_V";
-			tapping-term-ms = <200>;
-			bindings = <&kp V>, <&kp B>;
-		};
-		tdU: tapdance_U {
-			compatible = "zmk,behavior-tap-dance";
-			label = "TAPDANCE_U";
-			tapping-term-ms = <200>;
-			bindings = <&kp U>, <&kp Y>;
-		};
-		tdJ: tapdance_J {
-			compatible = "zmk,behavior-tap-dance";
-			label = "TAPDANCE_J";
-			tapping-term-ms = <200>;
-			bindings = <&kp J>, <&kp H>;
-		};
-		tdM: tapdance_M {
-			compatible = "zmk,behavior-tap-dance";
-			label = "TAPDANCE_M";
-			tapping-term-ms = <200>;
-			bindings = <&kp M>, <&kp N>;
-		};
-		tdP: tapdance_P {
-			compatible = "zmk,behavior-tap-dance";
-			label = "TAPDANCE_P";
-			tapping-term-ms = <200>;
-			bindings = <&kp P>, <&kp BACKSPACE>;
-		};
-		tdSEM: tapdance_SEM {
-			compatible = "zmk,behavior-tap-dance";
-			label = "TAPDANCE_SEM";
-			tapping-term-ms = <200>;
-			bindings = <&kp SEMI>, <&kp RET>;
-		};
+		// td: tapdance {
+		// 	compatible = "zmk,behavior-hold-tap";
+		// 	label = "TAPDANCE";
+		// 	#binding-cells = <2>;
+		// 	tapping-term-ms = <190>;
+		// 	quick_tap_ms = <0>;
+		// 	flavor = "tap-preferred";
+		// 	bindings = <&kp>, <&kp>;
+		// };
 	};
 
 	keymap {
@@ -78,10 +44,10 @@
 					
 		alpha1 {
 			bindings = <
-				&tdQ 					&kp W 	   	&kp E 		&tdR			&tdU		&kp I    		&kp O				&tdP
-				&mt LSHIFT Z 	&kp S 			&kp D			&tdF  	 	&tdJ		&kp K    		&kp L 			&mt LSHIFT SLASH
-				&tdA 					&kp X 			&kp C 		&tdV  		&tdM		&kp COMMA 	&kp DOT			&tdSEM
-																						&kp SPC	 	&kp SPC
+				&td TAB Q			&kp W 	   	&kp E 		&td T R			&td Y U		&kp I    		&kp O				&td BKSP P
+				&mt Z LSHIFT 	&kp S 			&kp D			&td G F  	 	&td H J		&kp K    		&kp L 			&mt SLASH LSHIFT
+				&td ESC A 		&kp X 			&kp C 		&td B V  		&td N M		&kp COMMA 	&kp DOT			&td RET SEMI
+																						&td0	 			&kp SPC
 			>;
 		};
 	};
