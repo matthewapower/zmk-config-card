@@ -14,60 +14,70 @@
 		tdq: tapdance_Q {
 			compatible = "zmk,behavior-tap-dance";
 			label = "TAPDANCE_Q";
+			#binding-cells = <0>;
 			tapping-term-ms = <200>;
 			bindings = <&kp Q>, <&kp TAB>;
 		};
 		tda: tapdance_A {
 			compatible = "zmk,behavior-tap-dance";
 			label = "TAPDANCE_A";
+			#binding-cells = <0>;
 			tapping-term-ms = <200>;
 			bindings = <&kp A>, <&kp ESC>;
 		};
 		tdr: tapdance_R {
 			compatible = "zmk,behavior-tap-dance";
 			label = "TAPDANCE_R";
+			#binding-cells = <0>;
 			tapping-term-ms = <200>;
 			bindings = <&kp R>, <&kp T>;
 		};
 		tdf: tapdance_F {
 			compatible = "zmk,behavior-tap-dance";
 			label = "TAPDANCE_F";
+			#binding-cells = <0>;
 			tapping-term-ms = <200>;
 			bindings = <&kp F>, <&kp G>;
 		};
 		tdv: tapdance_V {
 			compatible = "zmk,behavior-tap-dance";
 			label = "TAPDANCE_V";
+			#binding-cells = <0>;
 			tapping-term-ms = <200>;
 			bindings = <&kp V>, <&kp B>;
 		};
 		tdu: tapdance_U {
 			compatible = "zmk,behavior-tap-dance";
 			label = "TAPDANCE_U";
+			#binding-cells = <0>;
 			tapping-term-ms = <200>;
 			bindings = <&kp U>, <&kp Y>;
 		};
 		tdj: tapdance_J {
 			compatible = "zmk,behavior-tap-dance";
 			label = "TAPDANCE_J";
+			#binding-cells = <0>;
 			tapping-term-ms = <200>;
 			bindings = <&kp J>, <&kp H>;
 		};
 		tdm: tapdance_M {
 			compatible = "zmk,behavior-tap-dance";
 			label = "TAPDANCE_M";
+			#binding-cells = <0>;
 			tapping-term-ms = <200>;
 			bindings = <&kp M>, <&kp N>;
 		};
 		tdp: tapdance_P {
 			compatible = "zmk,behavior-tap-dance";
 			label = "TAPDANCE_P";
+			#binding-cells = <0>;
 			tapping-term-ms = <200>;
 			bindings = <&kp P>, <&kp BACKSPACE>;
 		};
 		tdsem: tapdance_SEM {
 			compatible = "zmk,behavior-tap-dance";
 			label = "TAPDANCE_SEM";
+			#binding-cells = <0>;
 			tapping-term-ms = <200>;
 			bindings = <&kp SEMI>, <&kp RET>;
 		};
