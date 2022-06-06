@@ -11,26 +11,12 @@
 
 / {
 	behaviors {
-		tdq: tapdance_Q {
-			compatible = "zmk,behavior-tap-dance";
-			label = "TAPDANCE_Q";
-			#binding-cells = <0>;
-			tapping-term-ms = <200>;
-			bindings = <&kp Q>, <&kp TAB>;
-		};
-		tda: tapdance_A {
-			compatible = "zmk,behavior-tap-dance";
-			label = "TAPDANCE_A";
-			#binding-cells = <0>;
-			tapping-term-ms = <200>;
-			bindings = <&kp A>, <&kp ESC>;
-		};
-		tdr: tapdance_R {
+		td: tapdance {
 			compatible = "zmk,behavior-tap-dance";
 			label = "TAPDANCE_R";
-			#binding-cells = <0>;
+			#binding-cells = <2>;
 			tapping-term-ms = <200>;
-			bindings = <&kp R>, <&kp T>;
+			bindings = <&kp>, <&kp>;
 		};
 		tdf: tapdance_F {
 			compatible = "zmk,behavior-tap-dance";
@@ -67,20 +53,6 @@
 			tapping-term-ms = <200>;
 			bindings = <&kp M>, <&kp N>;
 		};
-		tdp: tapdance_P {
-			compatible = "zmk,behavior-tap-dance";
-			label = "TAPDANCE_P";
-			#binding-cells = <0>;
-			tapping-term-ms = <200>;
-			bindings = <&kp P>, <&kp BACKSPACE>;
-		};
-		tdsem: tapdance_SEM {
-			compatible = "zmk,behavior-tap-dance";
-			label = "TAPDANCE_SEM";
-			#binding-cells = <0>;
-			tapping-term-ms = <200>;
-			bindings = <&kp SEMI>, <&kp RET>;
-		};
 	};
 
 	keymap {
@@ -88,10 +60,10 @@
 					
 		alpha1 {
 			bindings = <
-				&tdq 					&kp W 	   	&kp E 		&tdr			&tdu		&kp I    		&kp O				&tdp
-				&mt LSHIFT Z 	&kp S 			&kp D			&tdf  	 	&tdj		&kp K    		&kp L 			&mt LSHIFT SLASH
-				&tda 					&kp X 			&kp C 		&tdv  		&tdm		&kp COMMA 	&kp DOT			&tdsem
-																						&kp SPC	 	&kp SPC
+				&kp Q 				&kp W 	   	&kp E 		&td R T			&td U Y		&kp I    		&kp O				&kp P
+				&mt LSHIFT Z 	&kp S 			&kp D			&td F G  	 	&td J H		&kp K    		&kp L 			&mt RSHIFT SLASH
+				&kp A 				&kp X 			&kp C 		&td V B  		&td M N		&kp COMMA 	&kp DOT			&kp SEMI
+																						&kp K_APP	 	&kp SPC
 			>;
 		};
 	};
