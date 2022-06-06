@@ -9,7 +9,9 @@
 #include <dt-bindings/zmk/bt.h>
 
 #define alpha1 0
-#define LOWER  1
+#define alpha2 1
+#define arrows 2
+#define blank	 3
 
 / {
 	behaviors {
