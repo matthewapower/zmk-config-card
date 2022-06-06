@@ -9,7 +9,7 @@
 #include <dt-bindings/zmk/bt.h>
 
 #define alpha1 0
-#define alpha2 1
+#define LOWER  1
 
 / {
 	behaviors {
@@ -73,8 +73,26 @@
 			bindings = <
 				&kp TAB				&kp W 	   	&kp E 		&tdr			&tdu		&kp I    		&kp O				&kp BACKSPACE
 				&mt LSHIFT Z 	&kp S 			&kp D			&tdf  	 	&tdj		&kp K    		&kp L 			&mt RSHIFT SLASH
-				&kp ESC 			&kp X 			&kp C 		&tdv  		&tdm		&kp COMMA 	&kp DOT			&kp RET
+				&lt arrows ESC 			&kp X 			&kp C 		&tdv  		&tdm		&kp COMMA 	&kp DOT			&kp RET
 																						&kp LGUI	&kp SPC
+			>;
+		};
+
+		arrows {
+			bindings = <
+				&trans	&trans 	&trans	&trans	&trans					&kp UP_ARROW    &trans					&trans
+				&trans 	&trans 	&trans	&trans  &kp LEFT_ARROW	&kp DOWN_ARROW  &kp RIGHT_ARROW	&trans
+				&trans 	&trans 	&trans 	&trans	&trans 					&trans					&trans					&trans
+																&trans	&trans
+			>;
+		};
+
+		blank {
+			bindings = <
+				&trans	&trans 	&trans	&trans	&trans	&trans	&trans	&trans
+				&trans 	&trans 	&trans	&trans  &trans	&trans  &trans	&trans
+				&trans 	&trans 	&trans 	&trans	&trans 	&trans	&trans	&trans
+																&trans	&trans
 			>;
 		};
 	};
