@@ -11,12 +11,12 @@
 
 / {
 	behaviors {
-		td: tapdance {
+		tdr: tapdance_R {
 			compatible = "zmk,behavior-tap-dance";
 			label = "TAPDANCE_R";
-			#binding-cells = <2>;
+			#binding-cells = <0>;
 			tapping-term-ms = <200>;
-			bindings = <&kp>, <&kp>;
+			bindings = <&kp R>, <&kp T>;
 		};
 		tdf: tapdance_F {
 			compatible = "zmk,behavior-tap-dance";
@@ -60,9 +60,18 @@
 					
 		alpha1 {
 			bindings = <
-				&kp Q 				&kp W 	   	&kp E 		&td R T			&td U Y		&kp I    		&kp O				&kp P
-				&mt LSHIFT Z 	&kp S 			&kp D			&td F G  	 	&td J H		&kp K    		&kp L 			&mt RSHIFT SLASH
-				&kp A 				&kp X 			&kp C 		&td V B  		&td M N		&kp COMMA 	&kp DOT			&kp SEMI
+				&kp Q 				&kp W 	   	&kp E 		&tdr			&tdu		&kp I    		&kp O				&kp P
+				&mt LSHIFT Z	&kp S 			&kp D			&tdf  	 	&tdj		&kp K    		&kp L 			&mt RSHIFT SLASH
+				&kp A 				&kp X 			&kp C 		&tdv  		&tdm		&kp COMMA 	&kp DOT			&kp SEMI
+																						&kp K_APP	 	&kp SPC
+			>;
+		};
+
+		alpha2 {
+			bindings = <
+				&kp TAB				&kp W 	   	&kp E 		&tdr			&tdu		&kp I    		&kp O				&kp BACKSPACE
+				&mt LSHIFT Z 	&kp S 			&kp D			&tdf  	 	&tdj		&kp K    		&kp L 			&mt RSHIFT SLASH
+				&kp ESC 			&kp X 			&kp C 		&tdv  		&tdm		&kp COMMA 	&kp DOT			&kp RET
 																						&kp K_APP	 	&kp SPC
 			>;
 		};
