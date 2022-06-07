@@ -10,10 +10,10 @@
 
 #define alpha1 	0
 #define alpha2	1
-#define arrows 	2
+#define ARROWS 	2
 #define blank		3
-#define symbols	4
-#define numbers	5
+#define SYM_LAYER	4
+#define NUM_LAYER	5
 
 / {
 	behaviors {
@@ -67,7 +67,7 @@
 		alpha1 {
 			bindings = <
 				&kp Q 				&kp W 	   	&kp E 					&kp R							&kp U		&kp I    		&kp O				&kp P
-				&lt arrows A 	&kp X 			&lt numbers D		&lt symbols F  	 	&kp J		&kp K    		&kp L 			&kp SEMI
+				&lt ARROWS A 	&kp X 			&lt NUM_LAYER D		&lt SYM_LAYER F  	 	&kp J		&kp K    		&kp L 			&kp SEMI
 				&mt LSHIFT Z	&kp S 			&kp C 					&kp V  						&kp M		&kp COMMA 	&kp DOT			&mt RSHIFT SLASH
 																									&kp LGUI					&lt alpha2 SPACE
 			>;
@@ -82,7 +82,7 @@
 			>;
 		};
 
-		arrows {
+		ARROWS {
 			bindings = <
 				&trans	&trans 	&trans	&trans	&trans					&kp UP_ARROW    &trans					&trans
 				&trans 	&trans 	&trans	&trans  &kp LEFT_ARROW	&kp DOWN_ARROW  &kp RIGHT_ARROW	&trans
@@ -91,7 +91,7 @@
 			>;
 		};
 
-		symbols {
+		SYM_LAYER {
 			bindings = <
 				&trans			&trans 	&trans	&trans	&trans		&trans		&kp LEFT_PARENTHESIS	&kp RIGHT_PARENTHESIS	
 				&trans 			&trans 	&trans	&trans  &kp MINUS	&kp PLUS	&kp LEFT_BRACE				&kp RIGHT_BRACE  			
@@ -100,7 +100,7 @@
 			>;
 		};
 
-		numbers {
+		NUM_LAYER {
 			bindings = <
 				&trans	&trans 	&trans	&trans	&kp NUMBER_1	&kp NUMBER_2	&kp NUMBER_3	&trans
 				&trans	&trans 	&trans	&trans	&kp NUMBER_4	&kp NUMBER_5	&kp NUMBER_6	&trans
