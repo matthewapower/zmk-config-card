@@ -29,7 +29,7 @@
 			label = "TAPDANCE_F";
 			#binding-cells = <0>;
 			tapping-term-ms = <200>;
-			bindings = <&lt symbols F>, <&kp G>;
+			bindings = <&kp F>, <&kp G>;
 		};
 		tdv: tapdance_V {
 			compatible = "zmk,behavior-tap-dance";
@@ -66,10 +66,10 @@
 					
 		alpha1 {
 			bindings = <
-				&kp Q 				&kp W 	   	&kp E 				&tdr			&tdu		&kp I    		&kp O				&kp P
-				&mt LSHIFT Z	&kp S 			&lt numbers D	&tdf  	 	&tdj		&kp K    		&kp L 			&mt RSHIFT SLASH
-				&lt arrows A 	&kp X 			&kp C 				&tdv  		&tdm		&kp COMMA 	&kp DOT			&kp SEMI
-																								&kp LGUI	&lt alpha2 SPACE
+				&kp Q 				&kp W 	   	&kp E 					&tdr												&tdu		&kp I    		&kp O				&kp P
+				&mt LSHIFT Z	&kp S 			&lt numbers D		&lt symbols TAPDANCE_F  	 	&tdj		&kp K    		&kp L 			&mt RSHIFT SLASH
+				&lt arrows A 	&kp X 			&kp C 					&tdv  											&tdm		&kp COMMA 	&kp DOT			&kp SEMI
+																									&kp LGUI										&lt alpha2 SPACE
 			>;
 		};
 
