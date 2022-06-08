@@ -67,7 +67,7 @@
 		alpha1 {
 			bindings = <
 				&kp Q 				&kp W 	   	&kp E 					&kp R							&kp U		&kp I    		&kp O				&kp P
-				&lt ARROWS A 	&kp X 			&lt NUM_LAYER D		&lt SYM_LAYER F  	 	&kp J		&kp K    		&kp L 			&kp SEMI
+				&lt ARROWS A 	&kp X 			&lt 5 D		&lt 4 F  	 	&kp J		&kp K    		&kp L 			&kp SEMI
 				&mt LSHIFT Z	&kp S 			&kp C 					&kp V  						&kp M		&kp COMMA 	&kp DOT			&mt RSHIFT SLASH
 																									&kp LGUI					&lt alpha2 SPACE
 			>;
