@@ -44,9 +44,9 @@
 		default {
 		bindings = <
 		&kp Q 				&kp W 	   	&kp E 					&kp R							&kp U							&kp I    		&kp O				&kp P
-		&hl ARROWS A 	&kp S 			&hl NUM_LAYER D	&hl SYM_LAYER F  	&kp J							&kp K    		&kp L 			&kp SEMI
-		&mt LSHIFT Z	&mt LCTRL X &kp C 					&mt LEFT_ALT V  	&hl SYM2_LAYER M	&kp COMMA 	&kp DOT			&mt RSHIFT SLASH
-																							&kp LGUI					&hl alpha2 SPACE
+		&lt ARROWS A 	&kp S 			&lt NUM_LAYER D	&lt SYM_LAYER F  	&kp J							&kp K    		&kp L 			&kp SEMI
+		&mt LSHIFT Z	&mt LCTRL X &kp C 					&mt LEFT_ALT V  	&lt SYM2_LAYER M	&kp COMMA 	&kp DOT			&mt RSHIFT SLASH
+																							&kp LGUI					&lt alpha2 SPACE
 		>;
 		};
 
