@@ -71,7 +71,7 @@
 		SYM_LAYER {
 		bindings = <
 		&trans			&trans 	&trans	&trans	&kp LEFT_PARENTHESIS	&kp RIGHT_PARENTHESIS	&kp BACKSLASH 		&trans
-		&trans 			&trans 	&trans	&trans  &kp MINUS							&kp EQUAL	  					&kp SINGLE_QUOTE 	&trans
+		&trans 			&trans 	&trans	&trans  &kp MINUS							&kp EQUAL	  					&kp GRAVE 				&kp SINGLE_QUOTE
 		&kp LSHFT 	&trans 	&trans 	&trans	&kp LEFT_BRACKET			&kp RIGHT_BRACKET			&trans						&trans
 																&trans	&trans
 		>;
