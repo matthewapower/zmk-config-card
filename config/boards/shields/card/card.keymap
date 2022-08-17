@@ -43,18 +43,18 @@
 
 		default {
 		bindings = <
-		&kp Q 				&kp W 	   	&kp E 					&kp R							&kp U							&kp I    		&kp O				&kp P
-		&lt ARROWS A 	&kp S 			&lt NUM_LAYER D	&lt SYM_LAYER F  	&kp J							&kp K    		&kp L 			&kp SEMI
-		&mt LSHIFT Z	&mt LCTRL X &kp C 					&mt LEFT_ALT V  	&lt SYM2_LAYER M	&kp COMMA 	&kp DOT			&mt RSHIFT SLASH
+		&kp TAB 				&kp W 	   	&kp E 					&kp R							&kp U							&kp I    		&kp O				&kp BACKSPACE
+		&lt ARROWS ESC 	&kp S 			&lt NUM_LAYER D	&lt SYM_LAYER F  	&kp J							&kp K    		&kp L 			&kp RET
+		&mt LSHIFT A		&kp LCTRL		&trans 					&kp LEFT_ALT	  	&lt SYM2_LAYER M	&kp COMMA 	&kp DOT			&mt RSHIFT SEMI
 																							&kp LGUI					&lt alpha2 SPACE
 		>;
 		};
 
 		alpha2 {
 		bindings = <
-		&kp TAB				&kp W 	   	&kp E 		&kp T			&kp Y		&kp I    		&kp O				&kp BACKSPACE
-		&kp ESC 			&kp S 			&kp D			&kp G  	 	&kp H		&kp K    		&kp L 			&kp RET
-		&mt LSHIFT Z 	&kp X 			&kp C 		&kp B  		&kp N		&kp COMMA 	&kp DOT			&mt RSHIFT SLASH
+		&trans			&kp Q 	   	&kp T 		&kp G			&kp H		&kp Y    		&kp P				&trans
+		&trans 			&kp X 			&kp C			&kp B  	 	&kp M		&kp COMMA    		&kp DOT 			&trans
+		&mt LSHIFT Z 	&trans 			&trans 		&trans  		&trans		&trans 	&trans			&mt RSHIFT SLASH
 																				&kp LGUI	&kp SPC
 		>;
 		};
