@@ -53,8 +53,8 @@
 		alpha2 {
 		bindings = <
 		&trans			&kp Q 	   	&kp T 		&kp G			&kp H		&kp Y    		&kp P				&trans
-		&trans 			&kp X 			&kp C			&kp B  	 	&kp M		&kp COMMA    		&kp DOT 			&trans
-		&mt LSHIFT Z 	&trans 			&trans 		&trans  		&trans		&trans 	&trans			&mt RSHIFT SLASH
+		&trans 			&kp X 			&kp C			&kp V  	 	&kp N		&kp M    		&kp COMMA 			&trans
+		&mt LSHIFT Z 	&trans 		&trans 		&kp B  		&trans		&trans 	&trans			&mt RSHIFT DOT
 																				&kp LGUI	&kp SPC
 		>;
 		};
