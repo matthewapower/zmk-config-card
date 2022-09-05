@@ -72,7 +72,7 @@
 		bindings = <
 		&trans			&trans 	&trans	&trans	&kp LEFT_PARENTHESIS	&kp RIGHT_PARENTHESIS	&kp BACKSLASH 		&trans
 		&trans 			&trans 	&trans	&trans  &kp MINUS							&kp EQUAL	  					&kp GRAVE 				&kp SINGLE_QUOTE
-		&kp LSHFT 	&trans 	&trans 	&trans	&kp LEFT_BRACKET			&kp RIGHT_BRACKET			&trans						&trans
+		&kp LSHFT 	&trans 	&trans 	&trans	&kp LEFT_BRACKET			&kp RIGHT_BRACKET			&SLASH						&trans
 																&trans	&trans
 		>;
 		};
