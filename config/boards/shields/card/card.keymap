@@ -43,9 +43,9 @@
 
 		default {
 		bindings = <
-		&kp KC_VOLD 	&trans 	   	&trans 		&trans							&kp U							&kp I    		&kp O				&kp BACKSPACE
-		&kp KC_VOLU 	&trans 		&trans		&trans  			&kp J							&kp K    		&kp L 			&kp RET
-		&kp KC_MUTE	&trans		&trans 		&trans	  	&lt SYM2_LAYER M	&kp COMMA 	&kp DOT			&mt RSHIFT SEMI
+		&kp C_VOL_DN 	&trans 	   	&trans 		&trans							&kp U							&kp I    		&kp O				&kp BACKSPACE
+		&kp C_VOl_UP 	&trans 		&trans		&trans  			&kp J							&kp K    		&kp L 			&kp RET
+		&kp K_MUTE	&trans		&trans 		&trans	  	&lt SYM2_LAYER M	&kp COMMA 	&kp DOT			&mt RSHIFT SEMI
 																							&kp LGUI					&lt alpha2 SPACE
 		>;
 		};
