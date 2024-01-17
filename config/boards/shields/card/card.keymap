@@ -43,9 +43,9 @@
 
 		default {
 		bindings = <
-		&kp C_VOL_DN 	&kp W 	   	&kp E 					&kp R							&kp U							&kp I    		&kp O				&kp BACKSPACE
- 		&kp C_VOL_UP 	&kp S 		&lt NUM_LAYER D	&lt SYM_LAYER F  	&kp J							&kp K    		&kp L 			&kp RET
- 		&kp K_MUTE	&kp LS(LC(LA(LG(NUMBER_1))))	&trans 					&kp LEFT_ALT	  	&lt SYM2_LAYER M	&kp COMMA 	&kp DOT			&mt RSHIFT SEMI
+		&kp C_VOL_DN 	&kp LS(LC(LA(LG(NUMBER_7))) 	&kp LS(LC(LA(LG(NUMBER_8))) 	&kp LS(LC(LA(LG(NUMBER_9)))				&kp U							&kp I    		&kp O				&kp BACKSPACE
+ 		&kp C_VOL_UP 	&kp LS(LC(LA(LG(NUMBER_4)))) 	&kp LS(LC(LA(LG(NUMBER_5)))	&kp LS(LC(LA(LG(NUMBER_6)))  	&kp J							&kp K    		&kp L 			&kp RET
+ 		&kp K_MUTE	&kp LS(LC(LA(LG(NUMBER_1))))	&kp LS(LC(LA(LG(NUMBER_2))))	&kp LS(LC(LA(LG(NUMBER_3))))	  	&lt SYM2_LAYER M	&kp COMMA 	&kp DOT			&mt RSHIFT SEMI
  																							&kp LGUI					&lt alpha2 SPACE	
 		>;
 		};
