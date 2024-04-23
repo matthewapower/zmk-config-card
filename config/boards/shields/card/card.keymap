@@ -43,10 +43,10 @@
 
 		default {
 		bindings = <
-		&kp TAB 				&kp W 	   	&kp E 					&kp R							&kp U							&kp I    		&kp O				&kp BACKSPACE
-		&lt ARROWS ESC 	&kp S 			&lt NUM_LAYER D	&lt SYM_LAYER F  	&kp J							&kp K    		&kp L 			&kp RET
-		&mt LSHIFT A		&kp LCTRL		&trans 					&kp LEFT_ALT	  	&lt SYM2_LAYER M	&kp COMMA 	&kp DOT			&mt RSHIFT SEMI
-																							&kp LGUI					&lt alpha2 SPACE
+		&lt SYM2_LAYER NUMBER_0 	&kp NUMBER_1 	   	&kp NUMBER_2 					&kp NUMBER_3							&kp U							&kp I    		&kp O				&kp BACKSPACE
+		&kp NUMBER_4 	&kp UP_ARROW 	&kp NUMBER_5	&kp NUMBER_6  	&kp J							&kp K    		&kp L 			&kp RET
+		&kp LEFT_ARROW		&kp DOWN_ARROW		&kp RIGHT_ARROW 			&kp NUMBER_7	  	&lt SYM2_LAYER M	&kp COMMA 	&kp DOT			&mt RSHIFT SEMI
+																							&kp NUMBER_8					&lt alpha2 SPACE
 		>;
 		};
 
@@ -80,7 +80,7 @@
 		SYM2_LAYER {
 		bindings = <
 		&kp EXCLAMATION	&kp AT_SIGN 	&kp HASH	&kp DOLLAR	&kp PERCENT	&kp CARET	&kp AMPERSAND	&kp ASTERISK
-		&trans 	&trans 	&trans	&trans  &bt BT_PRV	&bt BT_NXT  &bt BT_CLR	&trans
+		&bt BT_PRV	&bt BT_NXT  &bt BT_CLR	&trans  &bt BT_PRV	&bt BT_NXT  &bt BT_CLR	&trans
 		&trans 	&trans 	&trans 	&trans	&trans 	&trans	&trans	&trans
 														&trans	&trans
 		>;
